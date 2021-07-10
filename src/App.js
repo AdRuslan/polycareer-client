@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { useRoutes } from './routes';
 import { AuthContext } from './context/AuthContext';
 import { useAuth } from './hooks/auth.hook.';
@@ -18,11 +18,11 @@ function App() {
       value={{ login, logout, token, userId, isReady, isLogin }}
     >
       <div className="app">
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <main>{routes}</main>
           {isLogin ? <Footer /> : <footer></footer>}
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </AuthContext.Provider>
   );

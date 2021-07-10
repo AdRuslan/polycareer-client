@@ -1,0 +1,58 @@
+.vacancies-title {
+  margin-top: 100px;
+}
+
+.vacancies-item-1row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.vacancies-text {
+  margin-top: 15px;
+}
+
+.vacancies {
+  margin-top: 30px;
+  &-num {
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    background: #26a69a;
+    border-radius: 50%;
+  }
+  &-item {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  &-buttons {
+    display: flex;
+    i {
+      margin: 0 5px;
+      z-index: 1;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .company-name {
+    font-weight: 400;
+  }
+  .bold {
+    font-weight: 500;
+  }
+}
+
+.update-icon:first-child {
+  color: #26a69a;
+}

@@ -1,0 +1,32 @@
+.reviews-item {
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 15px;
+  margin-top: 20px;
+  overflow: auto;
+  &-name {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &-text:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+.perfect-grade {
+  background: rgb(159, 214, 159);
+}
+
+.norm-grade {
+  background: rgb(214, 196, 161);
+}
+
+.bad-grade {
+  background: rgb(224, 123, 123);
+}
+
+.reviews-title {
+  margin-top: 45px;
+}
